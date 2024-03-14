@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+}
+/* header */
+header{
+    display: flex;
+    background-color: #6245bb;
+    height: 15vh;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 5%; 
+}
+.logo {
+    height:15vh;
+
+}
+header a img {
+    height: 100%;
+    object-fit: cover;
+}
+header a {
+    height: 100%;
+    padding: 12px;
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+}
+header a:hover
+{
+    color:#a50044;
+}
+
+.titleH1{
+    width: 100%;
+    height: auto;
+    font-size: 20px;
+    text-align: center;
+    margin: 20px;
+}
+.messiBanner{
+    width: 100%;
+    height: auto;
+}
+.messiBanner img{
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+}
+/* end header */
+/* main */
+
+.card-1{
+    margin: 50px;
+    display: flex;
+    img{
+        width: 90vh;
+        border-radius: 5px ;
+    }
+    h2{
+        font-size: 40px;
+        text-align: center;
+        margin: 10px;
+    }
+    p{
+        margin: 10px;
+        text-align:center;
+    }
+}
+.cardLlegada{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card-2{
+    margin: 50px;
+    display: flex;
+    img{
+        width: 70vh;
+        border-radius: 5px ;
+        margin: 30px;
+    }
+    h2{
+        font-size: 40px;
+        text-align: center;
+        margin: 10px;
+    }
+    p{
+        margin: 10px;
+        text-align:center;
+    }
+}
+.cardDebut{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card-3{
+    margin: 50px;
+    display: flex;
+    img{
+        width: 70vh;
+        border-radius: 5px ;
+        margin: 30px;
+    }
+    h2{
+        font-size: 40px;
+        text-align: center;
+        margin: 10px;
+    }
+    p{
+        margin: 10px;
+        text-align:center;
+    }
+}
+.cardTrayectoria{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card-4{
+    margin: 50px;
+    display: flex;
+    img{
+        width: 70vh;
+        border-radius: 5px ;
+        margin: 30px;
+    }
+    h2{
+        font-size: 40px;
+        text-align: center;
+        margin: 10px;
+    }
+    p{
+        margin: 10px;
+        text-align:center;
+    }
+}
+.cardSalida{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* booton */
+.btn{
+    width: 100%;
+    display: flex;
+    justify-content:center;
+}
+.button-19{
+    margin: 30px;
+    font-size: 20px; 
+    background-color:#6245bb ;
+    color: white;
+    padding: 15px 32px;
+    border-radius: 8px;
+}
+.button-19 {
+    transition-duration: 0.4s;
+  }
+  .button-19:hover {
+    background-color: #edbb00;
+    color: white;
+  }
+/* end butto */
+/* banner final */
+.bannerFinal{
+    width: 100%;
+    img{
+        width: 100%;
+    }
+}
+/* footer */
+.site-footer
+{
+    background-color:#26272b;
+    padding:80px 0 20px;
+    font-size:15px;
+    line-height:24px;
+    color:#737373;
+}
+.site-footer .social-icons a
+{
+    width:40px;
+    height:40px;
+    line-height:40px;
+    margin-left:6px;
+    margin-right:0;
+    border-radius:100%;
+    background-color:#33353d
+}
+.social-icons
+{
+    padding-left:0;
+    margin-bottom:0;
+    list-style:none;
+    display: flex;
+    justify-content: center;
+}
+.social-icons a{
+    background-color:#eceeef;
+    color:#818a91;
+    font-size:16px;
+    display:flex;
+    justify-content: center;
+    line-height:44px;
+    width:44px;
+    height:44px;
+    text-align:center;
+    margin-right:8px;
+    border-radius:100%;
+    -webkit-transition:all .2s linear;
+    -o-transition:all .2s linear;
+    transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+    color:#fff;
+    background-color:#29aafe;
+}
+.copyright-text{
+    display: flex;
+    justify-content: center;
+}
