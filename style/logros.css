@@ -49,6 +49,14 @@ nav a {
   border-radius: 10px;
   font-weight: 600;
 }
+.titleH1 {
+  width: 100%;
+  height: auto;
+  font-size: 20px;
+  text-align: center;
+  margin: 20px;
+  color: #a50044;
+}
 .messiBanner {
   width: 100%;
   height: auto;
@@ -61,8 +69,7 @@ nav a {
   box-shadow: 5px 8px 12px gray;
 }
 .messiBanner h1 {
-  text-align:center;
-  width: 100%;
+  text-align: center;
   font-size: 50px;
   color: white;
   text-shadow: 0 0 8px black;
@@ -71,27 +78,25 @@ nav a {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-/* end header */
-/* main */
+/*CARDS LOGROS NACIONALES*/
 .card-1 {
   margin: 50px;
   display: flex;
   img {
-    width: 70vh;
+    width: 90vh;
     border-radius: 5px;
   }
   h2 {
     font-size: 40px;
     text-align: center;
-    margin: 0px 10px;
+    margin: 10px;
   }
   p {
-    margin: 20px;
-    padding: 30px;
-    text-align: left;
+    margin: 10px;
+    text-align: center;
   }
 }
-.cardLlegada {
+.cardmvpliga {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -112,10 +117,10 @@ nav a {
   }
   p {
     margin: 10px;
-    text-align: left;
+    text-align: center;
   }
 }
-.cardDebut {
+.cardpichichi {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -136,15 +141,16 @@ nav a {
   }
   p {
     margin: 10px;
-    text-align: left;
+    text-align: center;
   }
 }
-.cardTrayectoria {
+.cardfifapro {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+/*CARDS LOGROS INTERNACIONALES*/
 .card-4 {
   margin: 50px;
   display: flex;
@@ -160,23 +166,232 @@ nav a {
   }
   p {
     margin: 10px;
-    text-align: left;
+    text-align: center;
   }
 }
-.cardSalida {
+.cardworldplayer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-/* booton */
+.card-5 {
+  margin: 50px;
+  display: flex;
+  img {
+    width: 70vh;
+    border-radius: 5px;
+    margin: 30px;
+  }
+  h2 {
+    font-size: 40px;
+    text-align: center;
+    margin: 10px;
+  }
+  p {
+    margin: 10px;
+    text-align: center;
+  }
+}
+.cardthebest {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card-6 {
+  margin: 50px;
+  display: flex;
+  img {
+    width: 70vh;
+    border-radius: 5px;
+    margin: 30px;
+  }
+  h2 {
+    font-size: 40px;
+    text-align: center;
+    margin: 10px;
+  }
+  p {
+    margin: 10px;
+    text-align: center;
+  }
+}
+.cardgoldenboy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card-7 {
+  margin: 50px;
+  display: flex;
+  img {
+    width: 90vh;
+    border-radius: 5px;
+  }
+  h2 {
+    font-size: 40px;
+    text-align: center;
+    margin: 10px;
+  }
+  p {
+    margin: 10px;
+    text-align: center;
+  }
+}
+.cardbravo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card-8 {
+  margin: 50px;
+  display: flex;
+  img {
+    width: 70vh;
+    border-radius: 5px;
+    margin: 30px;
+  }
+  h2 {
+    font-size: 40px;
+    text-align: center;
+    margin: 10px;
+  }
+  p {
+    margin: 10px;
+    text-align: center;
+  }
+}
+.cardgoleadorchampions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.card-9 {
+  margin: 50px;
+  display: flex;
+  img {
+    width: 90vh;
+    border-radius: 5px;
+  }
+  h2 {
+    font-size: 40px;
+    text-align: center;
+    margin: 10px;
+  }
+  p {
+    margin: 10px;
+    text-align: center;
+  }
+}
+.cardbotadeoro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card-10 {
+  margin: 50px;
+  display: flex;
+  img {
+    width: 70vh;
+    border-radius: 5px;
+    margin: 30px;
+  }
+  h2 {
+    font-size: 40px;
+    text-align: center;
+    margin: 10px;
+  }
+  p {
+    margin: 10px;
+    text-align: center;
+  }
+}
+.cardonzedeoro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.card-11 {
+  margin: 50px;
+  display: flex;
+  img {
+    width: 90vh;
+    border-radius: 5px;
+  }
+  h2 {
+    font-size: 40px;
+    text-align: center;
+    margin: 10px;
+  }
+  p {
+    margin: 10px;
+    text-align: center;
+  }
+}
+.cardjugadordeeuropa {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card-12 {
+  margin: 50px;
+  display: flex;
+  img {
+    width: 70vh;
+    border-radius: 5px;
+    margin: 30px;
+  }
+  h2 {
+    font-size: 40px;
+    text-align: center;
+    margin: 10px;
+  }
+  p {
+    margin: 10px;
+    text-align: center;
+  }
+}
+.cardlaureus {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.card-13 {
+  margin: 50px;
+  display: flex;
+  img {
+    width: 90vh;
+    border-radius: 5px;
+  }
+  h2 {
+    font-size: 40px;
+    text-align: center;
+    margin: 10px;
+  }
+  p {
+    margin: 10px;
+    text-align: center;
+  }
+}
+.cardbalondeoro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* BUTTON */
 .btn {
   width: 100%;
   display: flex;
   justify-content: center;
     a{
       color: white;
-      text-decoration:none;
+      text-decoration: none;
     }
 }
 .button-19 {
@@ -194,15 +409,14 @@ nav a {
   background-color: #edbb00;
   color: white;
 }
-/* end butto */
-/* banner final */
+/* BANNER FINAL*/
 .bannerFinal {
   width: 100%;
   img {
     width: 100%;
   }
 }
-/* footer */
+/*FOOTER*/
 .site-footer {
   background-color: #26272b;
   padding: 80px 0 20px;
@@ -251,14 +465,4 @@ nav a {
 .copyright-text {
   display: flex;
   justify-content: center;
-}
-.mainCard img {
-  cursor: pointer;
-  transition: 4s;
-  filter: brightness(75%);
-}
-.mainCard img:hover {
-  transform: scale(1.1);
-  transition: 4s;
-  filter: brightness(100%);
 }

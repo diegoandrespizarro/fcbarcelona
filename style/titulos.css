@@ -61,8 +61,7 @@ nav a {
   box-shadow: 5px 8px 12px gray;
 }
 .messiBanner h1 {
-  text-align:center;
-  width: 100%;
+  text-align: center;
   font-size: 50px;
   color: white;
   text-shadow: 0 0 8px black;
@@ -71,112 +70,58 @@ nav a {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-/* end header */
-/* main */
+/*CARDS TITULOS NACIONALES*/
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+h2 {
+  text-align: center;
+  font-size: 25px;
+  color: #6245bb;
+  margin-top: 30px;
+}
+h3 {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 10px;
+}
+p {
+  margin: 0px;
+  text-align: center;
+  margin-bottom: 30px;
+}
 .card-1 {
   margin: 50px;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   img {
-    width: 70vh;
+    width: 60vh;
+    margin-top: 20px;
     border-radius: 5px;
   }
-  h2 {
-    font-size: 40px;
-    text-align: center;
-    margin: 0px 10px;
-  }
-  p {
-    margin: 20px;
-    padding: 30px;
-    text-align: left;
-  }
-}
-.cardLlegada {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 .card-2 {
   margin: 50px;
   display: flex;
-  img {
-    width: 70vh;
-    border-radius: 5px;
-    margin: 30px;
-  }
-  h2 {
-    font-size: 40px;
-    text-align: center;
-    margin: 10px;
-  }
-  p {
-    margin: 10px;
-    text-align: left;
-  }
-}
-.cardDebut {
-  display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-}
-.card-3 {
-  margin: 50px;
-  display: flex;
   img {
-    width: 70vh;
+    width: 60vh;
+    margin-top: 20px;
     border-radius: 5px;
-    margin: 30px;
-  }
-  h2 {
-    font-size: 40px;
-    text-align: center;
-    margin: 10px;
-  }
-  p {
-    margin: 10px;
-    text-align: left;
   }
 }
-.cardTrayectoria {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.card-4 {
-  margin: 50px;
-  display: flex;
-  img {
-    width: 70vh;
-    border-radius: 5px;
-    margin: 30px;
-  }
-  h2 {
-    font-size: 40px;
-    text-align: center;
-    margin: 10px;
-  }
-  p {
-    margin: 10px;
-    text-align: left;
-  }
-}
-.cardSalida {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-/* booton */
+/* BUTTON */
 .btn {
   width: 100%;
   display: flex;
   justify-content: center;
     a{
       color: white;
-      text-decoration:none;
+      text-decoration: none;
     }
 }
 .button-19 {
@@ -194,15 +139,14 @@ nav a {
   background-color: #edbb00;
   color: white;
 }
-/* end butto */
-/* banner final */
+/* BANNER FINAL*/
 .bannerFinal {
   width: 100%;
   img {
     width: 100%;
   }
 }
-/* footer */
+/*FOOTER*/
 .site-footer {
   background-color: #26272b;
   padding: 80px 0 20px;
@@ -251,14 +195,4 @@ nav a {
 .copyright-text {
   display: flex;
   justify-content: center;
-}
-.mainCard img {
-  cursor: pointer;
-  transition: 4s;
-  filter: brightness(75%);
-}
-.mainCard img:hover {
-  transform: scale(1.1);
-  transition: 4s;
-  filter: brightness(100%);
 }
