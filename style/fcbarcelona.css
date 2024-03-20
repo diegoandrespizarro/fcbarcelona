@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+/* header */
+header {
+  display: flex;
+  background-color: #6245bb;
+  height: 15vh;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 5%;
+}
+.logo {
+  height: 15vh;
+}
+header a img {
+  height: 100%;
+  object-fit: cover;
+}
+header a {
+  height: 100%;
+  margin: 5px;
+  padding: 15px;
+  text-decoration: none;
+}
+header a:hover {
+  color: #a50044;
+}
+.navBar {
+  font-size: 15px;
+}
+nav a {
+  margin: 5px;
+  padding: 8px 15px;
+  color: white;
+  font-size: 17px;
+  border: 2px solid white;
+  border-radius: 10px;
+  font-weight: 600;
+}
+.messiBanner {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.messiBanner img {
+  width: 100%;
+  height: 85vh;
+  object-fit: cover;
+  box-shadow: 5px 8px 12px gray;
+}
+.messiBanner h1 {
+  text-align:center;
+  width: 100%;
+  font-size: 50px;
+  color: white;
+  text-shadow: 0 0 8px black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* end header */
+/* main */
+.card-1 {
+  margin: 50px;
+  display: flex;
+  img {
+    width: 70vh;
+    border-radius: 5px;
+  }
+  h2 {
+    font-size: 40px;
+    text-align: center;
+    margin: 0px 10px;
+  }
+  p {
+    margin: 20px;
+    padding: 30px;
+    text-align: left;
+  }
+}
+.cardLlegada {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card-2 {
+  margin: 50px;
+  display: flex;
+  img {
+    width: 70vh;
+    border-radius: 5px;
+    margin: 30px;
+  }
+  h2 {
+    font-size: 40px;
+    text-align: center;
+    margin: 10px;
+  }
+  p {
+    margin: 10px;
+    text-align: left;
+  }
+}
+.cardDebut {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card-3 {
+  margin: 50px;
+  display: flex;
+  img {
+    width: 70vh;
+    border-radius: 5px;
+    margin: 30px;
+  }
+  h2 {
+    font-size: 40px;
+    text-align: center;
+    margin: 10px;
+  }
+  p {
+    margin: 10px;
+    text-align: left;
+  }
+}
+.cardTrayectoria {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card-4 {
+  margin: 50px;
+  display: flex;
+  img {
+    width: 70vh;
+    border-radius: 5px;
+    margin: 30px;
+  }
+  h2 {
+    font-size: 40px;
+    text-align: center;
+    margin: 10px;
+  }
+  p {
+    margin: 10px;
+    text-align: left;
+  }
+}
+.cardSalida {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* booton */
+.btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+    a{
+      color: white;
+      text-decoration:none;
+    }
+}
+.button-19 {
+  margin: 30px;
+  font-size: 20px;
+  background-color: #6245bb;
+  color: white;
+  padding: 15px 32px;
+  border-radius: 8px;
+}
+.button-19 {
+  transition-duration: 0.4s;
+}
+.button-19:hover {
+  background-color: #edbb00;
+  color: white;
+}
+/* end butto */
+/* banner final */
+.bannerFinal {
+  width: 100%;
+  img {
+    width: 100%;
+  }
+}
+/* footer */
+.site-footer {
+  background-color: #26272b;
+  padding: 80px 0 20px;
+  font-size: 15px;
+  line-height: 24px;
+  color: #737373;
+}
+.site-footer .social-icons a {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin-left: 6px;
+  margin-right: 0;
+  border-radius: 100%;
+  background-color: #33353d;
+}
+.social-icons {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.social-icons a {
+  background-color: #eceeef;
+  color: #818a91;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  line-height: 44px;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  margin-right: 8px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.social-icons a:active,
+.social-icons a:focus,
+.social-icons a:hover {
+  color: #fff;
+  background-color: #29aafe;
+}
+.copyright-text {
+  display: flex;
+  justify-content: center;
+}
+.mainCard img {
+  cursor: pointer;
+  transition: 4s;
+  filter: brightness(75%);
+}
+.mainCard img:hover {
+  transform: scale(1.1);
+  transition: 4s;
+  filter: brightness(100%);
+}

@@ -1,264 +1,268 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-  width: 100%;
-  overflow-x: hidden;
+    width: 100%;
+    /* background-color: #2a2a2a; */
+    background: rgb(180, 180, 180);
+    background: linear-gradient(
+        0deg,
+        rgba(180, 180, 180, 1) 0%,
+        rgba(73, 72, 72, 1) 100%
+    );
 }
-/* header */
+
 header {
-  display: flex;
-  background-color: #6245bb;
-  height: 15vh;
-  align-items: center;
-  justify-content: space-between;
-  padding: 6px 5%;
+    /* background-color: #b4b4b4; descomentar para ver el efecto del gradient */
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 5%;
 }
-.logo {
-  height: 15vh;
-}
-header a img {
-  height: 100%;
-  object-fit: cover;
-}
+
 header a {
-  height: 100%;
-  margin: 5px;
-  padding: 15px;
-  text-decoration: none;
+    padding: 12px;
+    height: 100%;
+    text-decoration: none;
+    color: #000;
+    font-size: 24px;
+    font-weight: 600;
 }
-header a:hover {
-  color: #a50044;
+
+header nav ul {
+    display: flex;
+    list-style: none;
 }
-.navBar {
-  font-size: 15px;
+
+header nav ul li {
+    margin: 0 10px;
 }
-nav a {
-  margin: 5px;
-  padding: 8px 15px;
-  color: white;
-  font-size: 17px;
-  border: 2px solid white;
-  border-radius: 10px;
-  font-weight: 600;
+
+header img {
+    height: 100%;
+    object-fit: cover;
 }
-.messiBanner {
-  width: 100%;
-  height: auto;
-  position: relative;
+
+/* Active nav item */
+header nav ul li a {
+    color: #d4d4d4;
 }
-.messiBanner img {
-  width: 100%;
-  height: 85vh;
-  object-fit: cover;
-  box-shadow: 5px 8px 12px gray;
+
+/* Primary Section */
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85vh;
+    padding: 0 5vw;
 }
-.messiBanner h1 {
-  text-align:center;
-  width: 100%;
-  font-size: 50px;
-  color: white;
-  text-shadow: 0 0 8px black;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+
+.main-container div {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center; /* como uso un !important en .main-content, eso se va a sobreescribir solo para esa regla*/
 }
-/* end header */
-/* main */
-.card-1 {
-  margin: 50px;
-  display: flex;
-  img {
-    width: 70vh;
-    border-radius: 5px;
-  }
-  h2 {
-    font-size: 40px;
+
+.main-container .img-container img {
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.main-content {
+    /* background-color: #d4d4d4; */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around !important;
+    align-items: center;
+    padding: 0 5%;
+}
+.main-content h1 {
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* Styling call to action */
+.main-content button {
+    padding: 18px 36px;
+    background-color: #d4d4d4;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.main-content button a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+}
+
+/* Achievements */
+.achievements {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.achievements h2 {
+    width: 100%;
     text-align: center;
-    margin: 0px 10px;
-  }
-  p {
-    margin: 20px;
-    padding: 30px;
-    text-align: left;
-  }
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #fff; /* white */
 }
-.cardLlegada {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.achievements h3 {
+    color: #494848; /* dark grey */
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
 }
-.card-2 {
-  margin: 50px;
-  display: flex;
-  img {
-    width: 70vh;
-    border-radius: 5px;
-    margin: 30px;
-  }
-  h2 {
-    font-size: 40px;
+
+.achievement-card {
+    background-color: #909090;
+    width: 250px;
     text-align: center;
-    margin: 10px;
-  }
-  p {
-    margin: 10px;
-    text-align: left;
-  }
+    border-radius: 12px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
 }
-.cardDebut {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.achievement-card p {
+    color: #fff;
 }
-.card-3 {
-  margin: 50px;
-  display: flex;
-  img {
-    width: 70vh;
+
+.achievement-card img {
+    max-width: 100%;
     border-radius: 5px;
-    margin: 30px;
-  }
-  h2 {
-    font-size: 40px;
-    text-align: center;
-    margin: 10px;
-  }
-  p {
-    margin: 10px;
-    text-align: left;
-  }
+    margin-bottom: 10px;
 }
-.cardTrayectoria {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+/* Pseudoclase hover */
+.achievement-card img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
 }
-.card-4 {
-  margin: 50px;
-  display: flex;
-  img {
-    width: 70vh;
+header nav ul li a:hover {
+    color: #494848;
+    color: #2a2a2a;
+    color: #fff;
+}
+
+header nav ul li:hover {
+    background-color: #181818;
     border-radius: 5px;
-    margin: 30px;
-  }
-  h2 {
-    font-size: 40px;
+    transition: background-color 0.3s ease;
+}
+
+/* ANALIZAR */
+.main-content button a:active {
+    outline: none;
+    background-color: #494848;
+    color: #fff;
+}
+
+.button-link:hover {
+    background-color: #636363;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+.button-link:focus {
+    outline: none;
+    background-color: aqua !important;
+}
+
+/* Forms y footer */
+
+.contact-form {
     text-align: center;
-    margin: 10px;
-  }
-  p {
-    margin: 10px;
-    text-align: left;
-  }
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background: linear-gradient(
+        0deg,
+        rgba(180, 180, 180, 1) 0%,
+        rgba(73, 72, 72, 1) 100%
+    );
+    color: #fff;
 }
-.cardSalida {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
 }
-/* booton */
-.btn {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-    a{
-      color: white;
-      text-decoration:none;
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #636363;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #494848;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #b4b4b4;
+    padding: 20px;
+    color: #000;
+}
+
+@media screen and (max-width: 1024px) {
+    body {
+        background: rgb(180, 180, 180);
+        background: linear-gradient(
+            180deg,
+            rgba(180, 180, 180, 1) 0%,
+            rgba(73, 72, 72, 1) 100%
+        );
+    }
+    header nav ul li a {
+        font-size: 18px; /* rem - em*/
+        color: black
+    }
+    /* .button-link { */
+    .main-content button {
+        padding: 12px 24px;
+        background-color: #d4d4d4;
+        border: none;
+        border-radius: 16px;
+    }
+    .main-content h1 {
+        font-size: 36px;
     }
 }
-.button-19 {
-  margin: 30px;
-  font-size: 20px;
-  background-color: #6245bb;
-  color: white;
-  padding: 15px 32px;
-  border-radius: 8px;
-}
-.button-19 {
-  transition-duration: 0.4s;
-}
-.button-19:hover {
-  background-color: #edbb00;
-  color: white;
-}
-/* end butto */
-/* banner final */
-.bannerFinal {
-  width: 100%;
-  img {
-    width: 100%;
-  }
-}
-/* footer */
-.site-footer {
-  background-color: #26272b;
-  padding: 80px 0 20px;
-  font-size: 15px;
-  line-height: 24px;
-  color: #737373;
-}
-.site-footer .social-icons a {
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  margin-left: 6px;
-  margin-right: 0;
-  border-radius: 100%;
-  background-color: #33353d;
-}
-.social-icons {
-  padding-left: 0;
-  margin-bottom: 0;
-  list-style: none;
-  display: flex;
-  justify-content: center;
-}
-.social-icons a {
-  background-color: #eceeef;
-  color: #818a91;
-  font-size: 16px;
-  display: flex;
-  justify-content: center;
-  line-height: 44px;
-  width: 44px;
-  height: 44px;
-  text-align: center;
-  margin-right: 8px;
-  border-radius: 100%;
-  -webkit-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
-  transition: all 0.2s linear;
-}
-.social-icons a:active,
-.social-icons a:focus,
-.social-icons a:hover {
-  color: #fff;
-  background-color: #29aafe;
-}
-.copyright-text {
-  display: flex;
-  justify-content: center;
-}
-.mainCard img {
-  cursor: pointer;
-  transition: 4s;
-  filter: brightness(75%);
-}
-.mainCard img:hover {
-  transform: scale(1.1);
-  transition: 4s;
-  filter: brightness(100%);
+
+@media screen and (max-width: 768px) {
+    .main-content h1 {
+        font-size: 24px;
+    }
 }
