@@ -4,25 +4,32 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
   font-style: normal;
-  box-sizing: border-box;
 }
+
 body {
   width: 100%;
   overflow-x: hidden;
+  background: rgb(190, 20, 90);
+  background: linear-gradient(
+    270deg,
+    rgba(190, 20, 90, 1) 0%,
+    rgba(42, 42, 42, 1) 100%
+  );
 }
 /* header */
 header {
   display: flex;
-  background-color: #6245bb;
+  background-color: #004d98;
   height: 15vh;
   align-items: center;
   justify-content: space-between;
   padding: 6px 5%;
 }
 .logo {
-  height: 15vh;
+  height: 10vh;
 }
 header a img {
   height: 100%;
@@ -58,11 +65,12 @@ nav a {
   width: 100%;
   height: 85vh;
   object-fit: cover;
-  box-shadow: 5px 8px 12px gray;
+  box-shadow: 5px 8px 12px black;
 }
 .messiBanner h1 {
   text-align: center;
-  font-size: 50px;
+  font-size: 60px;
+  font-weight: bold;
   color: white;
   text-shadow: 0 0 8px black;
   position: absolute;
@@ -70,64 +78,74 @@ nav a {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-/*CARDS TITULOS NACIONALES*/
-.container {
+/* Achievements */
+.achievements {
   display: flex;
-  align-items: center;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 20px;
 }
-h2 {
+
+.achievements h2 {
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.achievement-card {
+  background-color: #004d98;
+  border-style: solid;
+  width: 250px;
+  height: 400;
   text-align: center;
-  font-size: 25px;
-  color: #6245bb;
-  margin-top: 30px;
+  border-radius: 12px;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  box-shadow: 5px 15px 12px black;
 }
-h3 {
-  font-size: 20px;
-  text-align: center;
-  margin-top: 10px;
+.achievement-card p {
+  color: white;
+  padding: 10px;
+  font-weight: 500;
 }
-p {
-  margin: 0px;
-  text-align: center;
-  margin-bottom: 30px;
+
+.achievement-card img {
+  max-width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  border-style: solid;
 }
-.card-1 {
-  margin: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  img {
-    width: 60vh;
-    margin-top: 20px;
-    border-radius: 5px;
-  }
+/* Pseudoclase hover */
+.achievement-card img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
 }
-.card-2 {
-  margin: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  img {
-    width: 60vh;
-    margin-top: 20px;
-    border-radius: 5px;
-  }
+header nav ul li a:hover {
+  color: #494848;
+  color: #2a2a2a;
+  color: #fff;
+}
+
+header nav ul li:hover {
+  background-color: #181818;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 /* BUTTON */
 .btn {
   width: 100%;
   display: flex;
   justify-content: center;
-    a{
-      color: white;
-      text-decoration: none;
-    }
+  a {
+    color: white;
+    text-decoration: none;
+  }
 }
 .button-19 {
   margin: 30px;
   font-size: 20px;
-  background-color: #6245bb;
+  background-color: #004d98;
   color: white;
   padding: 15px 32px;
   border-radius: 8px;
@@ -187,12 +205,13 @@ p {
   transition: all 0.2s linear;
 }
 .social-icons a:active,
-.social-icons a:focus,
 .social-icons a:hover {
   color: #fff;
   background-color: #29aafe;
 }
-.copyright-text {
+
+h4 {
   display: flex;
   justify-content: center;
+  color: #737373;
 }

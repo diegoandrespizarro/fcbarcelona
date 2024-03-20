@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap"
+      rel="stylesheet"
+    />
     <title>Titulos</title>
     <link
       rel="shortcut icon"
@@ -15,13 +21,12 @@
     <!--LOGO Y NAV-->
     <header>
       <div class="logo">
-        <a href="../pages/fcbarcelona.html">
-          <img src="../assets/logo3.jpg" alt="LOGO" />
+        <a href="./fcbarcelona.html">
+          <img src="../assets/logo3.png" alt="LOGO" />
         </a>
       </div>
       <nav class="navBar">
-        <a href="#nacionales">Titulos Nacionales</a>
-        <a href="#internacionales">Titulos Internacionales</a>
+        <a href="#titulos">Titulos nacionales e internacionales</a>
       </nav>
     </header>
     <!--BANNER Y TITULO H1-->
@@ -35,66 +40,70 @@
       </div>
     </aside>
     <main>
-      <section class="container">
-        <div class="titleH2" id="nacionales"></div>
-        <h2>TITULOS NACIONALES</h2>
-        <div class="card-1">
-          <img
-            src="../assets/pag logros img/LIGAMESSI.png"
-            alt="FOTO PREMIO LIGA"
-          />
-          <h3>LA LIGA SANTANDER</h3>
+      <section class="achievements" id="titulos">
+        <div class="achievement-card">
+          <h2>LIGA SANTANDER</h2>
+          <div class="image-container">
+            <img
+              src="../assets/pag logros img/LIGAMESSI.png"
+              alt="liga messi"
+            />
+          </div>
           <p>
             Logro conquistarla un total de 10 veces siendo la primera vez en la
             temporada 2004/2005
           </p>
-          <img src="../assets/pag logros img/SUPERCOPAESPMESSI.png" alt="" />
-          <h3>SUPERCOPA DE ESPAÑA</h3>
+        </div>
+        <div class="achievement-card">
+          <h2>SUPERCOPA DE ESPAÑA</h2>
+          <div class="image-container">
+            <img
+              src="../assets/pag logros img/SUPERCOPAESPMESSI.png"
+              alt="messi supercopa"
+            />
+          </div>
           <p>
             Logro conquistarla un total de 7 veces siendo la primera vez en la
             temporada 2005/06
           </p>
-          <img
-            src="../assets/pag logros img/COPA DEL REY.png"
-            alt="FOTO PREMIO COPA DEL REY"
-          />
-          <h3>COPA DEL REY</h3>
+        </div>
+        <div class="achievement-card">
+          <h2>COPA DEL REY</h2>
+          <div class="image-container">
+            <img
+              src="../assets/pag logros img/COPA DEL REY.png"
+              alt="copa del rey"
+            />
+          </div>
           <p>
             Logro conquistarla un total de 7 veces siendo la primera vez en la
             temporada 2008/09
           </p>
         </div>
-        <!--TITULOS INTERNACIONALES GANADOS POR LIONENL MESSI-->
-        <div class="titleH2" id="internacionales">
-          <h2>TITULOS INTERNACIONALES</h2>
-        </div>
-        <div class="card-2">
-          <img
-            src="../assets/pag logros img/MESSIGANACHAMP.png"
-            alt="FOTO PREMIO CHAMPIONS"
-          />
-          <h3>CHAMPIONS LEAGUE</h3>
+        <div class="achievement-card">
+          <h2>CHAMPIONS LEAGUE</h2>
+          <div class="image-container">
+            <img
+              src="../assets/pag logros img/MESSIGANACHAMP.png"
+              alt="messi champions"
+            />
+          </div>
           <p>
             Logro conquistarla un total de 4 veces siendo la primera en la
             temporada 2005/06.
           </p>
-          <img
-            src="../assets/pag logros img/messi supercopa europa.jpg"
-            alt="FOTO PREMIO SUPERCOPA EUROPA"
-          />
-          <h3>SUPERCOPA DE EUROPA</h3>
+        </div>
+        <div class="achievement-card">
+          <h2>SUPERCOPA DE EUROPA</h2>
+          <div class="image-container">
+            <img
+              src="../assets/pag logros img/messi supercopa europa.jpg"
+              alt="Mundial Qatar 2022"
+            />
+          </div>
           <p>
             Logro conquistarla un total de 3 veces siendo la primera en la
             temporada 2009/10
-          </p>
-          <img
-            src="../assets/pag logros img/MESSIMUNDIALCLUB.png"
-            alt="FOTO PREMIO MUNDIAL CLUB"
-          />
-          <h3>MUNDIAL DE CLUBES</h3>
-          <p>
-            Logro conquistarlo un total de 3 veces siendo el primero en la
-            temporada 2011
           </p>
         </div>
       </section>
@@ -102,7 +111,7 @@
       <section class="btn">
         <div>
           <button class="button-19" role="button" type="button">
-            <a href="../pages/fcbarcelona.html">Inicio</a>
+            <a href="../index.html">Inicio</a>
           </button>
           <button class="button-19" role="button" type="button">
             <a href="./logros.html">Logros</a>
@@ -121,14 +130,19 @@
     </main>
     <!--FOOTER PIE DE PAGINA-->
     <footer class="site-footer">
-      <h3 class="copyright-text">
-        Agos Suarez/Lisandro Vera/Flor Martínez/Lucas Ulloa/Luis Córdoba/Mariano
-        Godoy/Stefy Correa/Diego Pizarro
-      </h3>
+      <h4>
+        © Copyright FC Barcelona Página Oficial del FC Barcelona
+      </h4>
       <div class="social-icons">
         <a href="https://www.fcbarcelona.es/es/" target="_blank"
           ><img src="../assets/www.png" alt="LOGO WWW PAGINA MESSI"
         /></a>
+        <a href="https://www.youtube.com/@FCBarcelona" target="_blank"
+        ><img src="../assets/youtube (1).png" alt="LOGO WWW PAGINA MESSI"
+      /></a>
+      <a href="https://www.facebook.com/fcbarcelona/" target="_blank"
+      ><img src="../assets/facebook (1).png" alt="LOGO WWW PAGINA MESSI"
+    /></a>
       </div>
     </footer>
   </body>
